@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -t true",
+    "predeploy": "vite build && echo meal-store > dist\\CNAME && copy dist\\index.html dist\\404.html && type nul > dist\\.nojekyll",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
