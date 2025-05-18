@@ -33,9 +33,10 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          antd: ['antd']
+          antd: ['antd','@ant-design/icons']
         }
       }
-    }
+    },
+    chunkSizeWarningLimit: 1500, // Increase warning limit to 1000kB
   }
 })
