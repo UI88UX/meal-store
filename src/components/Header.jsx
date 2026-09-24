@@ -7,7 +7,7 @@ import {
     UserOutlined,
     MenuOutlined
 } from "@ant-design/icons";
-import { Menu, Space, Image, Row, Col, Button, Drawer, Tooltip, Avatar } from "antd";
+import { Menu, Image, Row, Col, Button, Drawer, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -157,7 +157,7 @@ const Header = () => {
             )}
 
             {/* Main Navigation */}
-            <Col flex="auto">
+            <Col flex="1 1 auto">
                 <Menu
                     theme="dark"
                     mode="horizontal"
@@ -165,25 +165,27 @@ const Header = () => {
                     style={{
                         lineHeight: '64px',
                         borderBottom: 'none',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        flex: '1'
                     }}
                     items={commonItems}
                 />
             </Col>
 
             {/* Auth Navigation - right aligned */}
-            <Col flex="none">
+            <Col flex="0 1 200px">  {/* Changed from flex="none" */}
                 <Menu
                     theme="dark"
                     mode="horizontal"
                     selectedKeys={[activeMenu]}
-                    stnpm yle={{
+                    style={{
                         lineHeight: '64px',
                         borderBottom: 'none',
-                        minWidth: '200px',
+                        minWidth: '200px',  // Increased from 200px
                         justifyContent: 'flex-end'
                     }}
                     items={authItems}
+                    overflowedIndicator={null}  // This prevents the ... button from appearing
                 />
             </Col>
         </Row>
@@ -219,10 +221,10 @@ const Header = () => {
                 onClose={onClose}
                 open={visible}
                 styles={{
-                    header: { background: '#001529', color: '#fff'  },
+                    header: { background: '#001529', color: '#fff' },
                     body: { padding: "24px" },
                     content: { borderRadius: "10px" },
-                  }}
+                }}
             >
                 <Menu
                     theme="dark"
@@ -236,7 +238,7 @@ const Header = () => {
     );
 
     return screens.md ? desktopView : mobileView;
-    
+
 };
 
 export default Header;

@@ -52,7 +52,7 @@ function App() {
         },
       }}
     >
-      <Router>
+      <Router basename='/meal-store'>
         <Suspense fallback={<LoadingFallback />}>
           <Layout className='layout' style={{ minHeight: '100vh' }}>
             <Affix>

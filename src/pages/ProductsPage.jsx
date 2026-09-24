@@ -237,7 +237,7 @@ const ProductPage = () => {
                                             <div style={{ position: 'relative' }}>
                                                 <img
                                                     alt={meal.strMeal}
-                                                    src={getOptimizedImageUrl(meal.strMealThumb)}
+                                                    src={meal.strMealThumb}
                                                     style={{
                                                         height: 200,
                                                         width: '100%',
@@ -356,7 +356,7 @@ const ProductPage = () => {
                     <Row gutter={16}>
                         <Col span={12}>
                             <img
-                                src={getOptimizedImageUrl(selectedMeal.strMealThumb, 800)}
+                                src={selectedMeal.strMealThumb}
                                 alt={selectedMeal.strMeal}
                                 style={{ width: '100%', borderRadius: 8 }}
                             />
