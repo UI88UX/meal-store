@@ -41,18 +41,18 @@ const { Title, Text } = Typography;
 const { Search } = Input;
 const { Option } = Select;
 
-// Cloudinary Configuration
-const CLOUD_NAME = 'your-cloud-name'; // Replace with your Cloudinary cloud name
-const getOptimizedImageUrl = (originalUrl, width = 400) => {
-  if (!originalUrl) return originalUrl;
+// // Cloudinary Configuration
+// const CLOUD_NAME = 'your-cloud-name'; // Replace with your Cloudinary cloud name
+// const getOptimizedImageUrl = (originalUrl, width = 400) => {
+//   if (!originalUrl) return originalUrl;
   
-  // Skip if already a Cloudinary URL
-  if (originalUrl.includes('res.cloudinary.com')) return originalUrl;
+//   // Skip if already a Cloudinary URL
+//   if (originalUrl.includes('res.cloudinary.com')) return originalUrl;
   
-  // Encode the original URL and construct Cloudinary URL
-  const encodedUrl = encodeURIComponent(originalUrl);
-  return `https://res.cloudinary.com/${CLOUD_NAME}/image/fetch/q_auto,f_webp,w_${width}/${encodedUrl}`;
-};
+//   // Encode the original URL and construct Cloudinary URL
+//   const encodedUrl = encodeURIComponent(originalUrl);
+//   return `https://res.cloudinary.com/${CLOUD_NAME}/image/fetch/q_auto,f_webp,w_${width}/${encodedUrl}`;
+// };
 
 const ProductPage = () => {
     const dispatch = useDispatch();
