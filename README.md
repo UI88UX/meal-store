@@ -8,7 +8,7 @@ A food e-commerce frontend built with React. The project provides a simple shopp
 
 <p align="center">
   <video controls width="100%">
-    <source src="https://github.com/user-attachments/assets/sha256:825d044889f5a509c591a3c5d84aba33b346dbcc7ea48a8b825aa22fb594c0f4" type="video/webm">
+    <source src="https://github.com/UI88UX/meal-store/releases/download/v1.0.0/mealstore-demo.webm" type="video/webm">
     Your browser does not support the video tag.
   </video>
 </p>
