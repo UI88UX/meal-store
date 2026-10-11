@@ -8,7 +8,7 @@ A food e-commerce frontend built with React. The project provides a simple shopp
 
 <p align="center">
   <video controls width="100%">
-    <source src="https://github.com/user-attachments/assets/606f0098-6e77-48d0-a69a-964cbcb0d54e" type="video/webm">
+    <source src="https://github.com/user-attachments/assets/sha256:825d044889f5a509c591a3c5d84aba33b346dbcc7ea48a8b825aa22fb594c0f4" type="video/webm">
     Your browser does not support the video tag.
   </video>
 </p>
