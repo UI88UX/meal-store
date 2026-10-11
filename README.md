@@ -7,15 +7,11 @@ A food e-commerce frontend built with React. The project provides a simple shopp
 ## Demo
 
 <p align="center">
-  <video controls width="100%">
-    <source src="https://github.com/UI88UX/meal-store/releases/download/v1.0.0/mealstore-demo.webm" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
-
-<p align="center">
-  <img src="./public/banner.png" alt="Meal Store landing page preview" width="100%" />
+  <a href="https://github.com/UI88UX/meal-store/releases/download/v1.0.0/mealstore-demo.webm" target="_blank">
+    <img src="./public/banner.png" alt="Meal Store Demo Video" width="100%" />
+  </a>
+  <br />
+  <em>Click the image above to watch the demo video.</em>
 </p>
 
 ## Overview
